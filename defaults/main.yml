@@ -1,6 +1,7 @@
 ---
+# The Kubernetes version to install (compatible with Rancher)
 k3s_version: v1.24.3+k3s1
-ansible_user: root
+# The K3s daemon command line options
 server_init_args: >-
   {% if groups['master'] | length > 1 %}
     {% if ansible_host == hostvars[groups['master'][0]]['ansible_host'] | default(groups['master'][0]) %}
@@ -11,6 +12,7 @@ server_init_args: >-
     --token {{ k3s_token }}
   {% endif %}
   {{ extra_server_args | default('') }}
+# The systemd directory to store the service file
 systemd_dir: /etc/systemd/system
 # interface which will be used for flannel
 flannel_iface: "eth0"
