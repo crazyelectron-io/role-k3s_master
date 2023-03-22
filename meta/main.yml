@@ -15,4 +15,6 @@ galaxy_info:
   galaxy_tags:
     - debian
 
-dependencies: []
+dependencies:
+- src: git+https://github.com/crazyelectron-io/role-k3s_prereq.git
+  name: k3s-prereq

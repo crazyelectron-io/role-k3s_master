@@ -75,8 +75,6 @@ all:
 `metal_lb_speaker_tag_version: "v0.13.4"` - Image tag for metalLB.
 `metal_lb_controller_tag_version: "v0.13.4"`
 
-`metal_lb_ip_range: "10.100.3.230-10.100.3.239"` - Metal LB IP range for load balancer.
-
 ## Usage of this role
 
 To use this role, include the following section in a `requirements.yml` file in the local `roles` directory:
