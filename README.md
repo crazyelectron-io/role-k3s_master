@@ -79,7 +79,7 @@ To use this role, include the following section in a `requirements.yml` file in 
 # Include the 'debian-base` role from GitHub
 - src: git@github.com:crazyelectron-io/role-k3s_master.git
   scm: git
-  version: master
+  version: main
   name: k3s-master
 ```
 
