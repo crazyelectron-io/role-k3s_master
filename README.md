@@ -71,6 +71,13 @@ Default value is (change these to your liking, the only required ones are --disa
 
 `public_dns: 1.1.1.1 8.8.8.8` - Our public DNS servers, starting with Cloudflare.
 
+`kube_vip_tag_version: "v0.5.0"` - Image tag for kube-vip.
+
+`metal_lb_speaker_tag_version: "v0.13.4"` - Image tag for metalLB.
+`metal_lb_controller_tag_version: "v0.13.4"`
+
+`metal_lb_ip_range: "10.100.3.230-10.100.3.239"` - Metal LB IP range for load balancer.
+
 ## Usage of this role
 
 To use this role, include the following section in a `requirements.yml` file in the local `roles` directory:
